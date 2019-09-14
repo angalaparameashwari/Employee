@@ -13,14 +13,9 @@ import com.google.api.client.json.jackson2.JacksonFactory;
 import com.google.api.client.util.store.FileDataStoreFactory;
 import com.google.api.services.gmail.Gmail;
 import com.google.api.services.gmail.GmailScopes;
-import com.google.api.services.gmail.model.Label;
-import com.google.api.services.gmail.model.ListLabelsResponse;
 
 import javax.mail.MessagingException;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.security.GeneralSecurityException;
 import java.util.Collections;
 import java.util.List;
@@ -70,21 +65,15 @@ public class GmailQuickstart {
 
         // Print the labels in the user's account.
         String user = "me";
-        EmailActions.sendMessage(service,user,EmailActions.createEmail("angalaparameashwariap@gmail.com",
-                "angalaparameashwari@gmail.com",
-                "WELCOME TO CHARGEBEE !!!",
-                "hi"));
-//        ListLabelsResponse listResponse = service.users().labels().list(user).execute();
-//        List<Label> labels = listResponse.getLabels();
-//        if (labels.isEmpty()) {
-//            System.out.println("No labels found.");
-//        } else {
-//            System.out.println("Labels:");
-//            for (Label label : labels) {
-//                System.out.printf("- %s\n", label.getName());
-//            }
-//        }
-      // return service;
+        File file = new File("/Users/cb-angalaparameashwari/Documents/AP/Employee/resources/samplemail");
+
+
+        EmailActions.sendMessage(service,user,EmailActions.createEmailWithAttachment("angalaparameashwariap@gmail.com","angalaparameashwari@gmail.com",
+                "Welcome!!","Hi",file));
+//        EmailActions.sendMessage(service,user,EmailActions.createEmailWithAttachment("angalaparameashwariap@gmail.com",
+//                "angalaparameashwari@gmail.com",
+//                "WELCOME TO CHARGEBEE !!!",
+//                "hi"));
     }
 }
 

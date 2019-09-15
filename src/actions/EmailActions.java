@@ -29,7 +29,7 @@ public class EmailActions {
     private static final List<String> SCOPES = Collections.singletonList(GmailScopes.GMAIL_LABELS);
     private static final String CREDENTIALS_FILE_PATH = "/resources/credentials.json";
 
-    public static void main(String arg[]) throws MessagingException, javax.mail.MessagingException, IOException, GeneralSecurityException {
+  //  public static void main(String arg[]) throws MessagingException, javax.mail.MessagingException, IOException, GeneralSecurityException {
             // If you don't specify credentials when constructing the client, the client library will
             // look for credentials via the environment variable GOOGLE_APPLICATION_CREDENTIALS.
 //            Storage storage = StorageOptions.getDefaultInstance().getService();
@@ -46,7 +46,7 @@ public class EmailActions {
 //                "hi");
 //        sendMessage(GmailQuickstart.getGmailService(),"angalaparameashwari@gmail.com",mimeMessage);
 
-    }
+ //   }
 
 //    private static Credential getCredentials(final NetHttpTransport HTTP_TRANSPORT) throws IOException {
 //        // Load client secrets.
@@ -73,7 +73,7 @@ public class EmailActions {
 //                .build();
 //    }
 
-    public static MimeMessage createEmail(String to,
+    public MimeMessage createEmail(String to,
                                           String from,
                                           String subject,
                                           String bodyText)
@@ -91,7 +91,7 @@ public class EmailActions {
         return email;
     }
 
-    public static Message createMessageWithEmail(MimeMessage emailContent)
+    public Message createMessageWithEmail(MimeMessage emailContent)
             throws  IOException, javax.mail.MessagingException {
         ByteArrayOutputStream buffer = new ByteArrayOutputStream();
         emailContent.writeTo(buffer);
@@ -102,7 +102,7 @@ public class EmailActions {
         return message;
     }
 
-    public static MimeMessage createEmailWithAttachment(String to,
+    public MimeMessage createEmailWithAttachment(String to,
                                                         String from,
                                                         String subject,
                                                         String bodyText,
@@ -136,7 +136,7 @@ public class EmailActions {
         return email;
     }
 
-    public static Message sendMessage(Gmail service,
+    public Message sendMessage(Gmail service,
                                       String userId,
                                       MimeMessage emailContent)
             throws MessagingException, IOException, javax.mail.MessagingException {

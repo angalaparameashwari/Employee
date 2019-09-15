@@ -23,7 +23,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/jar_files/mysql-connector-java-8.0.13.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/jar_files/mysql-connector-java-8.0.13.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -32,7 +32,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/jar_files/protobuf-java-3.6.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/jar_files/protobuf-java-3.6.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -41,39 +41,30 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0.jar!/" />
         </CLASSES>
         <JAVADOC>
-          <root url="jar://$USER_HOME$/Documents/softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0-javadoc.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0-javadoc.jar!/" />
         </JAVADOC>
         <SOURCES>
-          <root url="jar://$USER_HOME$/Documents/softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0-sources.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/softwares/gmail/libs" />
+          <root url="file://$MODULE_DIR$/../../softwares/gmail/libs" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
-        <jarDirectory url="file://$USER_HOME$/Documents/softwares/gmail/libs" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/../../softwares/gmail/libs" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="file://$USER_HOME$/Documents/softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0.jar.properties" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/javax.mail-api-1.5.6.jar!/" />
+          <root url="file://$MODULE_DIR$/../../softwares/gmail/google-api-services-gmail-v1-rev105-1.25.0.jar.properties" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -82,7 +73,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/javax.servlet-api-3.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/javax.mail-api-1.5.6.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -91,7 +82,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/javax.mail-1.5.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/javax.servlet-api-3.0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -100,7 +91,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/guava-16.0.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/javax.mail-1.5.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -109,7 +100,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/commons-codec-1.10.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/guava-16.0.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -118,7 +109,25 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Documents/softwares/lombok.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../softwares/commons-codec-1.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../softwares/lombok.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../softwares/spark-streaming_2.12-2.4.4.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

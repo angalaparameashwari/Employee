@@ -55,8 +55,8 @@ public class GmailQuickstart {
         LocalServerReceiver receiver = new LocalServerReceiver.Builder().setPort(8888).build();
         return new AuthorizationCodeInstalledApp(flow, receiver).authorize("user");
     }
-    public static void main(String arg[]) throws GeneralSecurityException, IOException, MessagingException, com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException {
-   // public static Gmail getGmailService() throws IOException, GeneralSecurityException {
+   // public void main(String arg[]) throws GeneralSecurityException, IOException, MessagingException, com.sun.xml.internal.messaging.saaj.packaging.mime.MessagingException {
+   public Gmail getGmailService() throws IOException, GeneralSecurityException {
         // Build a new authorized API client service.
         final NetHttpTransport HTTP_TRANSPORT = GoogleNetHttpTransport.newTrustedTransport();
         Gmail service = new Gmail.Builder(HTTP_TRANSPORT, JSON_FACTORY, getCredentials(HTTP_TRANSPORT))
@@ -64,16 +64,12 @@ public class GmailQuickstart {
                 .build();
 
         // Print the labels in the user's account.
-        String user = "me";
-        File file = new File("/Users/cb-angalaparameashwari/Documents/AP/Employee/resources/samplemail");
 
-
-        EmailActions.sendMessage(service,user,EmailActions.createEmailWithAttachment("angalaparameashwariap@gmail.com","angalaparameashwari@gmail.com",
-                "Welcome!!","Hi",file));
 //        EmailActions.sendMessage(service,user,EmailActions.createEmailWithAttachment("angalaparameashwariap@gmail.com",
 //                "angalaparameashwari@gmail.com",
 //                "WELCOME TO CHARGEBEE !!!",
 //                "hi"));
+       return service;
     }
 }
 
